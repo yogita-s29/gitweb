@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+crossorigin="anonymous">
+<form #studentForm="ngForm" (ngSubmit)="RegisterStudent(studentForm)">
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p><span class="glyphicon-map-marker"></span>Mauli Maharashtra, India</p>
+                <p><span class="glyphicon-map-marker"></span> +00 1515151515</p>
+                <p><span class="glyphicon-map-marker"></span> mauli@gmail.com</p>
+
+            </div>
+            <div class="col-sm-7 slideanim">
+                <div class="row"> 
+                    <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="name" placeholder="Name" type="text" ngModel>
+            </div>
+            <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="name" placeholder="Email" type="email" ngModel>
+            </div>
+             </div>
+             <textarea class="form-group" id="comments" name="comments" placeholder="Comment" rows="5" ngModel></textarea>
+             <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p class="text-success">{{res}}</p>
+</form>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
